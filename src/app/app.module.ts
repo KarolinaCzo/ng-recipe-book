@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NgbCollapseModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
 // Import components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -23,7 +24,7 @@ import { ShoppingEditComponent } from './shopping-list/shopping-edit/shopping-ed
     ShoppingListComponent,
     ShoppingEditComponent
   ],
-  imports: [BrowserModule, NgbModule.forRoot(), NgbCollapseModule],
+  imports: [BrowserModule, NgbModule.forRoot(), NgbCollapseModule, FormsModule],
   providers: [],
   bootstrap: [AppComponent]
 })
